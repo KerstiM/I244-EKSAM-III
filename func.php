@@ -10,7 +10,7 @@ function connect_db(){
 }
 
 //Hinde tekitamine
-function tekita_hinne(){
+function tekita_hinne($id){
 global $L;
     if (!empty($_POST)){
     			$hinne = mysqli_real_escape_string($L, $_POST['hinne']);
@@ -19,7 +19,9 @@ global $L;
       			//header("Location: ?");
     			    //exit(0);
           echo $result;
+          tekita_hinne();
     		}
+
     	}
 
 //Hinde kuvamine
