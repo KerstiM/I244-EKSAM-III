@@ -1,0 +1,4 @@
+CREATE TABLE kmiller_hinne (
+id INTEGER PRIMARY KEY auto_increment,
+hinne INTEGER(1)
+);
